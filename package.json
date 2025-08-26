@@ -1,0 +1,42 @@
+{
+  "name": "quality-of-life-web",
+  "version": "1.0.0",
+  "description": "Quality of Life - Your Wellness Companion",
+  "type": "module",
+  "homepage": "https://kiruthika-ponnan.github.io/quality-of-life-web",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "wellness",
+    "health",
+    "quality-of-life",
+    "react",
+    "typescript"
+  ],
+  "author": "Quality of Life Team",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
+    "@types/node": "^18.15.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.0"
+  }
+}

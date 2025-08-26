@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-xl transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 px-6 rounded-xl border border-gray-200 transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+}
+
+/* Custom scrollbar for horizontal scrolling */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 6px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom colors to match Figma exactly */
+.text-gray-900 {
+  color: #111827;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.bg-blue-600 {
+  background-color: #2563eb;
+}
+
+.bg-blue-700 {
+  background-color: #1d4ed8;
+}
+
+.bg-orange-500 {
+  background-color: #f97316;
+}
+
+.bg-blue-900 {
+  background-color: #1e3a8a;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.bg-blue-50 {
+  background-color: #eff6ff;
+}
+
+.bg-indigo-100 {
+  background-color: #e0e7ff;
+} 
